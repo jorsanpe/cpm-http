@@ -1,0 +1,17 @@
+name: 'cpm-http'
+version: '1.0'
+build:
+  packages:
+    cpm:
+  bits:
+    mongoose: '6.16'
+  libraries:
+    - pthread
+    - ssl
+    - crypto
+test:
+  bits:
+    cest: '1.0'
+targets:
+  default:
+    main: 'main.cpp'
